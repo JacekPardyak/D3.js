@@ -13,5 +13,40 @@
     "name": "New York",
     "indicator1": 19481,
     "indicator2": 32.53
+  },
+  {
+    "name": "Madrit",
+    "indicator1": 4030,
+    "indicator2": 13.45
+  },
+  {
+    "name": "Warsaw",
+    "indicator1": 3912,
+    "indicator2": 45.41
+  },
+  {
+    "name": "Kiev",
+    "indicator1": 19481,
+    "indicator2": 32.53
+  },
+  {
+    "name": "Amsterdam",
+    "indicator1": 19481,
+    "indicator2": 32.53
+  },
+  {
+    "name": "Berlin",
+    "indicator1": 4030,
+    "indicator2": 13.45
+  },
+  {
+    "name": "Lisbon",
+    "indicator1": 3912,
+    "indicator2": 45.41
+  },
+  {
+    "name": "New York",
+    "indicator1": 19481,
+    "indicator2": 32.53
   }
 ]
