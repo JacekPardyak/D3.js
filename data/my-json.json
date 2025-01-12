@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Paris",
+    "indicator1": 4030,
+    "indicator2": 13.45
+  },
+  {
+    "name": "Tokyo",
+    "indicator1": 3912,
+    "indicator2": 45.41
+  },
+  {
+    "name": "New York",
+    "indicator1": 19481,
+    "indicator2": 32.53
+  }
+]

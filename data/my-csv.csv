@@ -1,0 +1,11 @@
+rank,workers,company,state_l,city,growth,revenue,industry
+1,227,Fuhu,California,El Segundo,158956.9106,195640000,Consumer Products & Services
+2,191,Quest Nutrition,California,El Segundo,57347.9246,82640563,Food & Beverage
+3,145,Reliant Asset Management,Virginia,Arlington,55460.1646,85076502,Business Products & Services
+4,62,Superfish,California,Palo Alto,26042.963,35293000,Software
+5,92,Acacia Communications,Massachusetts,Maynard,20690.4578,77652360,Telecommunications
+6,50,Provider Power,Maine,Auburn,19876.5169,137977203,Energy
+7,129,Crescendo Bioscience,California,South San Francisco,18375.0693,27308000,Health
+8,130,Plexus Worldwide,Arizona,Scottsdale,16457.6529,159897088,Health
+9,264,Vacasa,Oregon,Portland,16192.061,26263454,Travel & Hospitality
+10,11,Go Energies,North Carolina,Wilmington,16006.8013,32851754,Energy
