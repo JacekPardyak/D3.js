@@ -1,0 +1,55 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(IRdisplay)
+
+make = function(script, style = NULL, html = NULL, title = NULL) {
+    if(is.null(html)){
+    html = "
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>D3 in Depth</title>
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+    <style>%s</style>
+</head>
+<body>
+    <h2>%s</h2> 
+    <div id='container'></div>
+    <script>%s</script>
+</body>
+</html>
+"}
+    if(is.null(style)){style = ""}
+    if(is.null(title)){title = ""}
+    sprintf(html, style, title, script) |> display_html()
+}
+
+"// Dynamically create a paragraph and append it to the container
+const paragraph = document.createElement('p');
+paragraph.textContent = 'This is a dynamically created paragraph.';
+paragraph.style.color = 'steelblue';
+paragraph.style.fontSize = '90px';
+
+const container = document.getElementById('container');
+if (container) {
+  container.appendChild(paragraph);
+} else {
+  console.error('No container found to append the paragraph.');
+}" |> make()
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.

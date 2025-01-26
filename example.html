@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Simple D3.js Example</title>
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+</head>
+<body>
+    <h1>Simple D3.js Bar Chart</h1>
+    <script>
+        // Data
+        const data = [30, 80, 45, 60, 20, 90, 50];
+
+        // Create SVG container
+        const svg = d3
+            .select('body')
+            .append('svg')
+            .attr('width', 400)
+            .attr('height', 200)
+            .attr('style', 'border: 1px solid black;');
+
+        // Set dimensions for bars
+        const barWidth = 50;
+        const barSpacing = 10;
+
+        // Create bars
+        svg.selectAll('rect')
+            .data(data)
+            .join('rect')
+            .attr('x', (d, i) => i * (barWidth + barSpacing)) // Position bars
+            .attr('y', d => 200 - d) // Height positions (flipped for SVG)
+            .attr('width', barWidth)
+            .attr('height', d => d) // Bar height matches data value
+            .attr('fill', 'steelblue');
+
+        // Add text labels
+        svg.selectAll('text')
+            .data(data)
+            .join('text')
+            .attr('x', (d, i) => i * (barWidth + barSpacing) + barWidth / 2)
+            .attr('y', d => 200 - d - 5) // Position above bars
+            .attr('text-anchor', 'middle')
+            .text(d => d)
+            .attr('fill', 'black')
+            .style('font-size', '12px');
+    </script>
+</body>
+</html>
