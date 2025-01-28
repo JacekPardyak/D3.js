@@ -25,7 +25,7 @@ public class GFG {
 
 			// Dataset path
 			String breastCancerDataset
-				= "/home/droid/Tools/weka-3-8-5/data/breast-cancer.arff";
+				= "/kaggle/working/weka/weka-3-8-6/data/breast-cancer.arff";
 
 			// Creating bufferedreader to read the dataset
 			BufferedReader bufferedReader
